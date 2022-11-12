@@ -26,6 +26,7 @@ public class TrackServiceImplTest {
 
     @Mock
     private TrackRepository trackRepository;
+
     @InjectMocks
     private TrackServiceImpl trackService;
     private Track track;
@@ -34,8 +35,8 @@ public class TrackServiceImplTest {
 
     @BeforeEach
     void setUp() {
-        artist = new Artist(31,"Artist31");
-        track = new Track(31,"Track31",5,artist);
+        artist = new Artist(31,"KK");
+        track = new Track(31,"Main rahu",5,artist);
         trackList = Arrays.asList(track);
     }
 
